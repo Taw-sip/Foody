@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foody</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=M+PLUS+Rounded+1c:wght@700;800&family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="images/cutlery.png" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ===== nav Start ===== -->
+      <nav>
+        <div class="logo">
+          <img src="images/cutlery.png" />
+          <h2>Foody</h2>
+        </div>
+        <div class="nav-mid">
+          <a href="#home">Home</a>
+          <a href="#service">Service</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#book-table">Book Table</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <i id="setting-icon" class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </nav>
+      <!-- ===== nav End ===== -->
+
+      <!-- ===== Setting Start ===== -->
+      <div id="setting">
+        <a onclick="hideSetting()" href="#home">Home</a>
+        <a onclick="hideSetting()" href="#service">Service</a>
+        <a onclick="hideSetting()" href="#about">About</a>
+        <a onclick="hideSetting()" href="#menu">Menu</a>
+        <a onclick="hideSetting()" href="#book-table">Book Table</a>
+        <a onclick="hideSetting()" href="#contact">Contact</a>
+      </div>
+      <!-- ===== Setting End ===== -->
+
+      <!-- ===== Home Start ===== -->
+      <section id="home" class="section home">
+        <div class="home-left">
+          <p>Take Fresh Food & Enjoy Your Life</p>
+          <h2>FOOD THAT MAKES YOU HAPPY AND HEALTHY</h2>
+          <div class="search">
+            <input type="text" placeholder="Search Here" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="home-btn">
+            <div class="btn">
+              <p>Cart Item</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="btn">
+              <p>Favorite Item</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="card" id="cart-container">
+            <div class="card-top">
+              <p>Popular Dish</p>
+              <div class="card-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-bottom">
+              <img src="images/image-1.jpg" />
+              <div class="card-bottom-right">
+                <div class="card-bottom-1">
+                  <h2 id="menu-name">Pancake</h2>
+                  <h5>$250.00</h5>
+                </div>
+                <div class="card-bottom-2">
+                  <p>Add To Cart</p>
+                  <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-right">
+          <img src="images/home-img.png" />
+        </div>
+      </section>
+      <!-- ===== Home End ===== -->
+
+      <!-- ===== Service Start ===== -->
+      <section id="service" class="section service">
+        <div class="service-top">
+          <div class="ser-top-card">
+            <div class="ser-top-card-1">
+              <i class="fa-brands fa-bitcoin"></i>
+            </div>
+            <div class="ser-top-card-2">
+              <h5>Discount Voucher</h5>
+              <p>Enjoy Special Discount In Special Menu</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="ser-top-card">
+            <div class="ser-top-card-1">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+            <div class="ser-top-card-2">
+              <h5>Fresh Healthy Food</h5>
+              <p>Enjoy Fresh And Healthy Food</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="ser-top-card">
+            <div class="ser-top-card-1">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="ser-top-card-2">
+              <h5>Fastest Service</h5>
+              <p>We Pprovide Fastest Service</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-bottom">
+          <div class="ser-bottom-left">
+            <div class="service-card" id="cart-container">
+              <img src="images/service-img-1.png" />
+              <h5 id="menu-name">Egg Noodles</h5>
+              <p>Enjoy Egg Masala</p>
+              <i id="fav-icon" class="fa-regular fa-heart"></i>
+              <h5>$250.00</h5>
+              <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="service-card" id="cart-container">
+              <img src="images/service-img-2.png" />
+              <h5 id="menu-name">Beaf Masala</h5>
+              <p>Enjoy Beaf Masala</p>
+              <i id="fav-icon" class="fa-regular fa-heart"></i>
+              <h5>$250.00</h5>
+              <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          <div class="ser-bottom-right">
+            <h2>Our Special Dishes</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugit
+              quaerat dolor officia tenetur, sit reprehenderit explicabo eveniet
+              optio? Libero necessitatibus quasi rem ea soluta. Repudiandae sed
+              enim autem tempore?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Service End ===== -->
+
+      <!-- ===== About Start ===== -->
+      <section id="about" class="section about">
+        <div class="about-content">
+          <div class="about-top">
+            <div class="about-left">
+              <h2>Meet Our Master Chef Team</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+                eum quae ut numquam dolorum sit impedit vitae ex nesciunt libero
+                beatae voluptatum quidem, voluptas quas quis nihil
+                necessitatibus iusto accusamus.
+              </p>
+              <div class="about-card">
+                <div class="about-card-left">
+                  <i class="fa-solid fa-fire-burner"></i>
+                </div>
+                <div class="about-card-right">
+                  <h5>Cooking Ability</h5>
+                  <p>They all have amazing cooking avility</p>
+                </div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-left">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="about-card-right">
+                  <h5>Achivements in Cooking</h5>
+                  <p>Every chef have great achivements in cooking</p>
+                </div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-left">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="about-card-right">
+                  <h5>Certified Chef</h5>
+                  <p>All Chefs are certified for cooking</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-right">
+              <div class="about-img">
+                <img id="about-image" src="images/chef-1.png" />
+              </div>
+            </div>
+          </div>
+          <div class="about-bottom">
+            <div class="about-bottom-img" onclick="aboutImg1()">
+              <img src="images/chef-1.png" />
+            </div>
+            <div class="about-bottom-img" onclick="aboutImg2()">
+              <img src="images/chef-2.png" />
+            </div>
+            <div class="about-bottom-img" onclick="aboutImg3()">
+              <img src="images/chef-3.png" />
+            </div>
+            <div class="about-bottom-img" onclick="aboutImg4()">
+              <img src="images/chef-4.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About End ===== -->
+
+      <!-- ===== Menu Start ===== -->
+      <section id="menu" class="section menu">
+        <div class="menu-top">
+          <div class="menu-top-left">
+            <h2>Our Popular Menu</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              beatae quasi in, dolorum nisi inventore error vero illo fugit rem.
+            </p>
+          </div>
+          <div class="menu-top-right">
+            <i class="fa-solid fa-bowl-food"></i>
+            <i class="fa-solid fa-burger"></i>
+            <i class="fa-solid fa-mug-hot"></i>
+            <i class="fa-solid fa-ice-cream"></i>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </div>
+        </div>
+
+        <div class="menu-card-container swiper">
+          <div class="slide-content">
+            <div class="swiper-wrapper">
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-1.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Vegetable Salad</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-2.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Mashroom Soup</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-3.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Cicken Noodles</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-4.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Mashroom Salad</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-5.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Vegetable Soup</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-A-6.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Dry Salad</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-btn-container">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card-container swiper">
+          <div class="slide-content">
+            <div class="swiper-wrapper">
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-1.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5>Burger</h5>
+                      <p id="menu-name">Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-2.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Pizza</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-3.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Bacon Burger</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-4.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Pancake</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-5.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Chocolate Cake</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-B-6.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Cupcake</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-btn-container">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card-container swiper">
+          <div class="slide-content">
+            <div class="swiper-wrapper">
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-1.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Apple Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-2.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Orange Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-3.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Watermelon Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-4.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Strawberry Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-5.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Orange Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-card-content swiper-slide">
+                <div class="menu-card" id="cart-container">
+                  <div class="menu-card-left">
+                    <div class="menu-card-left-1">
+                      <img src="images/menu-img-C-6.png" />
+                    </div>
+                    <div class="menu-card-left-2">
+                      <i id="fav-icon" class="fa-regular fa-heart"></i>
+                      <h5 id="menu-name">Lemon Juice</h5>
+                      <p>Enjoy Special Dish</p>
+                      <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="menu-card-right">
+                    <h5>5.0 <i class="fa-solid fa-star"></i></h5>
+                    <h5>$99.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-btn-container">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Menu End ===== -->
+
+      <!-- ===== Book Table Start ===== -->
+      <div id="book-table">
+        <div class="left">
+          <img src="images/image.jpg" />
+        </div>
+        <div class="right">
+          <h2>Book A Table Online</h2>
+          <div class="form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <input type="datetime" placeholder="Date & Time" />
+            <input type="number" placeholder="No Of Pepole" />
+          </div>
+          <input type="text" placeholder="Special request" id="text" />
+          <button>BOOK NOW</button>
+        </div>
+      </div>
+      <!-- ===== Book Table End ===== -->
+
+      <!-- ===== Feedback Start ===== -->
+      <section id="feedback" class="section feedback">
+        <div class="feedback-content swiper">
+          <div class="feedback-card-container swiper-wrapper">
+            <div class="feedback-card swiper-slide">
+              <h2>Our Customer's Comments</h2>
+              <div class="feedback-bottom">
+                <div class="feedback-left">
+                  <div class="feedback-img">
+                    <img src="images/man-1.png" />
+                  </div>
+                </div>
+                <div class="feedback-right">
+                  <div class="feedback-right-top">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore nobis dolores amet, earum ab voluptas quo? Id
+                      fuga quidem dicta iusto, rem molestias quisquam, voluptate
+                      iste rerum voluptatum amet. Quisquam.
+                    </p>
+                  </div>
+                  <div class="feedback-right-bottom">
+                    <div class="feedback-right-bottom-left">
+                      <div class="line"></div>
+                      <div>
+                        <h5>Mickel Jackson</h5>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                    <div class="feedback-right-bottom-right">
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card swiper-slide">
+              <h2>Our Customer's Comments</h2>
+              <div class="feedback-bottom">
+                <div class="feedback-left">
+                  <div class="feedback-img">
+                    <img src="images/man-2.png" />
+                  </div>
+                </div>
+                <div class="feedback-right">
+                  <div class="feedback-right-top">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore nobis dolores amet, earum ab voluptas quo? Id
+                      fuga quidem dicta iusto, rem molestias quisquam, voluptate
+                      iste rerum voluptatum amet. Quisquam.
+                    </p>
+                  </div>
+                  <div class="feedback-right-bottom">
+                    <div class="feedback-right-bottom-left">
+                      <div class="line"></div>
+                      <div>
+                        <h5>Mickel Jackson</h5>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                    <div class="feedback-right-bottom-right">
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card swiper-slide">
+              <h2>Our Customer's Comments</h2>
+              <div class="feedback-bottom">
+                <div class="feedback-left">
+                  <div class="feedback-img">
+                    <img src="images/man-3.png" />
+                  </div>
+                </div>
+                <div class="feedback-right">
+                  <div class="feedback-right-top">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore nobis dolores amet, earum ab voluptas quo? Id
+                      fuga quidem dicta iusto, rem molestias quisquam, voluptate
+                      iste rerum voluptatum amet. Quisquam.
+                    </p>
+                  </div>
+                  <div class="feedback-right-bottom">
+                    <div class="feedback-right-bottom-left">
+                      <div class="line"></div>
+                      <div>
+                        <h5>Mickel Jackson</h5>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                    <div class="feedback-right-bottom-right">
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card swiper-slide">
+              <h2>Our Customer's Comments</h2>
+              <div class="feedback-bottom">
+                <div class="feedback-left">
+                  <div class="feedback-img">
+                    <img src="images/man-4.png" />
+                  </div>
+                </div>
+                <div class="feedback-right">
+                  <div class="feedback-right-top">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore nobis dolores amet, earum ab voluptas quo? Id
+                      fuga quidem dicta iusto, rem molestias quisquam, voluptate
+                      iste rerum voluptatum amet. Quisquam.
+                    </p>
+                  </div>
+                  <div class="feedback-right-bottom">
+                    <div class="feedback-right-bottom-left">
+                      <div class="line"></div>
+                      <div>
+                        <h5>Mickel Jackson</h5>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                    <div class="feedback-right-bottom-right">
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Feedback End ===== -->
+
+      <!-- ===== News Start ===== -->
+      <section id="news" class="news">
+        <div class="news-left">
+          <h2>Recent News & Updates</h2>
+          <div class="news-card" id="cart-container">
+            <div class="news-card-left">
+              <h5>35% OFF</h5>
+              <img src="images/menu-img-B-1.png" />
+            </div>
+            <div class="news-card-right">
+              Chill With Special
+              <h5 id="menu-name">Chicken Burger</h5>
+              <div id="cart-icon" class="news-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Buy Now
+              </div>
+            </div>
+          </div>
+          <div class="news-card" id="cart-container">
+            <div class="news-card-left">
+              <h5>35% OFF</h5>
+              <img src="images/menu-img-B-2.png" />
+            </div>
+            <div class="news-card-right">
+              Chill With Special
+              <h5 id="menu-name">Chicken Pizza</h5>
+              <div id="cart-icon" class="news-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Buy Now
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-right">
+          <div class="video-content">
+            <video src="images/video.mp4"></video>
+          </div>
+          <div class="play">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </section>
+      <!-- ===== News End ===== -->
+
+      <!-- ===== Footer Start ===== -->
+      <footer id="contact">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <div class="logo">
+              <img src="images/cutlery.png" />
+              <h2>Foody</h2>
+            </div>
+            <h5>
+              We Provide Best Service With Every Customer's
+              <br />
+              Vist Here To Enjoy Special Something
+            </h5>
+          </div>
+          <div class="footer-top-right">
+            <h5>Search Here Your Favorite Dish</h5>
+            <div class="search">
+              <input type="search" placeholder="Search Here" />
+              <i class="fa-solid fa-search"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-col">
+            <h5>CONTACT</h5>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                Capital City <br />
+                Dhaka, Bangladesh
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>
+                +880 1234 5678 <br />
+                +880 1234 5678
+              </p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>
+                user@gmail.com <br />
+                user@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>OUTLETE</h5>
+            <p>Dhaka</p>
+            <p>Chitagoang</p>
+            <p>Shylet</p>
+            <p>Borisal</p>
+            <p>Khulna</p>
+          </div>
+          <div class="footer-col">
+            <h5>OUR SERVICES</h5>
+            <p>Home Delivery</p>
+            <p>Online Order</p>
+            <p>Online Booking</p>
+            <p>Offline Booking</p>
+            <p>Party Arrange</p>
+          </div>
+          <div class="footer-col">
+            <h5>Help Center</h5>
+            <p>Dhaka</p>
+            <p>Chitagoang</p>
+            <p>Shylet</p>
+            <p>Borisal</p>
+            <p>Khulna</p>
+          </div>
+        </div>
+        <p class="copy">All Rights Reserved By Nayem</p>
+      </footer>
+
+      <div id="cart">
+        <div class="cart-img">
+          <img src="images/cart.gif" alt="Cart" />
+        </div>
+        <p id="cart-head"></p>
+        <div class="cart-text">
+          <p>Added To Cart Successfully</p>
+          <img src="./images/check.png" alt="Cheak" />
+        </div>
+      </div>
+
+      <div id="cart-added">
+        <p>This Item Already Added To Cart.</p>
+      </div>
+
+      <div id="fav">
+        <div class="cart-img">
+          <img src="images/add.gif" alt="Favorite" />
+        </div>
+        <p id="fav-head"></p>
+        <div class="cart-text">
+          <p>Added Favorite List Successfully</p>
+          <img src="./images/check.png" alt="Check" />
+        </div>
+      </div>
+
+      <div id="fav-added">
+        <div class="cart-img">
+          <img src="images/add.gif" alt="Favorite" />
+        </div>
+        <div class="cart-text">
+          <p>Removed From Favorite List</p>
+          <img src="./images/check.png" alt="Check" />
+        </div>
+      </div>
+      <!-- ===== Footer End ===== -->
+    </div>
+
+    <!-- ===== JS File ===== -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
