@@ -13,38 +13,78 @@ function aboutImg4() {
   aboutImg.src = "images/chef-4.png";
 }
 
-// ===== Menu ===== //
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// Show and hide menu content
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButtonAll = document.querySelectorAll(
+    "#menu-button-container button"
+  );
+  const menuItemAll = document.querySelectorAll(
+    "#menu-item-container .menu-card-container"
+  );
 
-  // autoplay slide
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  menuButtonAll[0].classList.add("menu-btn");
+  menuItemAll.forEach((menuItem) =>
+    menuItem.classList.add("menu-item-display")
+  );
+  menuSlide();
 
-  // for responsive
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    650: {
-      slidesPerView: 2,
-    },
-    1150: {
-      slidesPerView: 3,
-    },
-  },
+  menuButtonAll.forEach((menuButton, index) => {
+    menuButton.addEventListener("click", () => {
+      menuButtonAll.forEach((btn) => btn.classList.remove("menu-btn"));
+      menuButton.classList.add("menu-btn");
+
+      if (index === 0) {
+        menuItemAll.forEach((menuItem) =>
+          menuItem.classList.add("menu-item-display")
+        );
+        menuSlide();
+      } else {
+        menuItemAll.forEach((menuItem) =>
+          menuItem.classList.remove("menu-item-display")
+        );
+        menuItemAll[index - 1].classList.add("menu-item-display");
+        menuSlide();
+      }
+    });
+  });
 });
+
+// ===== for Menu ===== //
+function menuSlide() {
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // autoplay slide
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    // for responsive
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      1150: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
+
+menuSlide();
 
 // ===== Feedback ===== //
 var swiper = new Swiper(".feedback-content", {

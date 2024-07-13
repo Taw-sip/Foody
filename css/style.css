@@ -783,7 +783,7 @@ nav {
   gap: 15px;
 }
 
-.menu-top-right i {
+.menu-top-right button {
   width: 40px;
   height: 40px;
   background: var(--bg-back);
@@ -792,8 +792,31 @@ nav {
   line-height: 40px;
   text-align: center;
   color: var(--btn-dark);
-  font-size: 1.2rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.menu-top-right button i {
+  font-size: 1.2rem;
+}
+
+.menu-top-right .menu-btn {
+  background: var(--btn-dark);
+  color: var(--bg-back);
+}
+
+.menu-top-right button:hover {
+  background: var(--btn-dark);
+  color: var(--bg-back);
+  transform: scale(1.1);
+}
+
+#menu-item-container {
+  max-width: 1400px;
+  width: 100%;
 }
 
 .menu-card-container {
@@ -801,6 +824,11 @@ nav {
   width: 100%;
   position: relative;
   margin-top: 10px;
+  display: none;
+}
+
+.menu-item-display {
+  display: block;
 }
 
 .menu-btn-container {
@@ -854,6 +882,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .menu-card-left-1 {
@@ -865,14 +894,18 @@ nav {
   transform: translateY(-70%);
 }
 
-.menu-card h5 {
+.menu-card-left h5 {
   font-size: 1rem;
+  width: fit-content;
+  position: absolute;
+  width: 250px;
 }
 
 .menu-card p {
   font-size: 0.9rem;
   color: var(--p-color);
   font-weight: 500;
+  margin-top: 25px;
 }
 
 .menu-card .fa-heart {
@@ -1409,6 +1442,7 @@ footer .search i {
   margin-bottom: -20px;
   text-transform: uppercase;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
 }
 
 .cart-text {
@@ -1494,6 +1528,7 @@ footer .search i {
   margin-bottom: -20px;
   text-transform: uppercase;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
 }
 
 #fav-added {
@@ -1597,6 +1632,10 @@ footer .search i {
   #setting-icon {
     display: flex;
   }
+  .menu-top {
+    flex-direction: column;
+    gap: 30px;
+  }
   .menu-card {
     width: 250px;
     padding: 30px 20px;
@@ -1633,10 +1672,6 @@ footer .search i {
   }
   .home {
     padding: 80px 20px;
-  }
-  .menu-top {
-    flex-direction: column;
-    gap: 30px;
   }
   .about-right {
     display: none;
